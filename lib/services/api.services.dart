@@ -6,7 +6,7 @@ class WebhookService extends GetConnect {
 
   Future<Response> submitFormData(Map<String, dynamic> data) async {
     try {
-      final response = await get(webhookUrl);
+      final response = await post(webhookUrl, data);
       return response;
     } catch (e) {
       print("Error posting to webhook: $e");

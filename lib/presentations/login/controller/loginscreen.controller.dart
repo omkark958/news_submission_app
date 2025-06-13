@@ -8,8 +8,8 @@ class LoginscreenController extends GetxController {
   void logInn() async {
     if (formkey.currentState!.validate()) {
       // Form is valid
-      Get.snackbar('Success', 'Form submitted successfully');
-      await Future.delayed(const Duration(seconds: 2));
+      Get.snackbar('Success', 'Login successfully');
+      await Future.delayed(const Duration(seconds: 1));
       Get.offNamed("/newsform");
     }
   }
